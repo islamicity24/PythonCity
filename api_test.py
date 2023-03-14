@@ -9,6 +9,8 @@ wcapi = API(
 
 r = wcapi.get("prodeucts")
 
+import pprint
 print(r.status_code)
 
 print(r.json())
+pprint.pprint(r.json())
